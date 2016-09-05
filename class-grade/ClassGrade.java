@@ -6,14 +6,17 @@ public class ClassGrade {
     System.out.println("What grade did you get in your last class? (A, B, C, D, F)");
     String userGrade = console.readLine();
 
-    Boolean goodGrade = userGrade == "A" || userGrade == "B";
-    Boolean midGrade = userGrade == "C";
-    Boolean badgrade = userGrade == "D" || userGrade == "F";
-    if ( goodGrade) {
+    Boolean a = userGrade == "A";
+    Boolean b = userGrade == "B";
+    Boolean c = userGrade == "C";
+    Boolean d = userGrade == "D";
+    Boolean f = userGrade == "F";
+
+    if ( a || b ) {
       System.out.println("Nice job!");
-    } else if ( midGrade ) {
+    } else if ( c ) {
       System.out.println("Ehh, come on man...");
-    } else if ( badGrade ) {
+    } else if ( d || f ) {
       System.out.println("Just drop out already.");
     }
   }
