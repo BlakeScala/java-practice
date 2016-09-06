@@ -3,34 +3,12 @@ import java.io.Console;
 public class App {
   public static void main(String[] args) {
     Console myConsole = System.console();
-    
-    Vehicle hatchback = new Vehicle();
-      hatchback.mYear = 1994;
-      hatchback.mBrand = "Subaru";
-      hatchback.mModel = "Legacy";
-      hatchback.mMiles = 170000;
-      hatchback.mPrice = 4000;
 
-    Vehicle suv = new Vehicle();
-      suv.mYear = 2002;
-      suv.mBrand = "Ford";
-      suv.mModel = "Explorer";
-      suv.mMiles = 100000;
-      suv.mPrice = 7000;
-
-    Vehicle sedan = new Vehicle();
-      sedan.mYear = 2015;
-      sedan.mBrand = "Toyota";
-      sedan.mModel = "Camry";
-      sedan.mMiles = 50000;
-      sedan.mPrice = 30000;
-
-    Vehicle truck = new Vehicle();
-      truck.mYear = 1999;
-      truck.mBrand = "Ford";
-      truck.mModel = "Ranger";
-      truck.mMiles = 100000;
-      truck.mPrice = 4000;
+    Vehicle hatchback = new Vehicle(1994, "Subaru", "Legacy", 170000, 4000);
+    Vehicle suv = new Vehicle(2002, "Ford", "Explorer", 100000, 7000);
+    Vehicle sedan = new Vehicle(2015, "Toyota", "Camry", 50000, 30000);
+    Vehicle truck = new Vehicle(1999, "Ford", "Ranger", 100000, 4000);
+    Vehicle crossover = new Vehicle(1998, "Toyota", "Rav-4", 200000, 3500);
 
     Vehicle[] allVehicles = {hatchback, suv, sedan, truck};
     System.out.println("What is your maximum budget for a vehicle?");
