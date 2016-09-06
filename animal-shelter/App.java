@@ -8,9 +8,9 @@ public class App {
     String stringMaxWeight = console.readLine();
     Integer maxWeight = Integer.parseInt(stringMaxWeight);
 
-    Animal dog = new Animal("Margot", "Border Collie", 4, 50);
-    Animal cat = new Animal("Ichi", "Cat", 5, 28);
-    Animal pig = new Animal("Appa", "Pig", 8, 180);
+    Animal dog = new Animal("Margot", "Border Collie", 4, 50, true);
+    Animal cat = new Animal("Ichi", "Cat", 5, 28, false);
+    Animal pig = new Animal("Appa", "Pig", 8, 180,true);
 
     Animal[] animals = { dog , cat , pig};
 
@@ -22,6 +22,9 @@ public class App {
         System.out.println(eachAnimal.mSpecies);
         System.out.println(eachAnimal.mAge);
         System.out.println(eachAnimal.mWeight);
+      }
+      if (eachAnimal.isAdopted( boolean adopted)) {
+        System.out.println(eachAnimal + " has been adopted!");
       }
     }
   }
