@@ -8,23 +8,9 @@ public class App {
     String stringMaxWeight = console.readLine();
     Integer maxWeight = Integer.parseInt(stringMaxWeight);
 
-    Animal dog = new Animal();
-    dog.mName = "Margot";
-    dog.mSpecies = "Border Collie";
-    dog.mAge = 4;
-    dog.mWeight = 50;
-
-    Animal cat = new Animal();
-    cat.mName = "Ichi";
-    cat.mSpecies = "Cat";
-    cat.mAge = 5;
-    cat.mWeight = 28;
-
-    Animal pig = new Animal();
-    pig.mName = "Appa";
-    pig.mSpecies = "Pig";
-    pig.mAge = 8;
-    pig.mWeight = 180;
+    Animal dog = new Animal("Margot", "Border Collie", 4, 50);
+    Animal cat = new Animal("Ichi", "Cat", 5, 28);
+    Animal pig = new Animal("Appa", "Pig", 8, 180);
 
     Animal[] animals = { dog , cat , pig};
 
